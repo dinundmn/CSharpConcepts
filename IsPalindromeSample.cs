@@ -16,6 +16,16 @@ namespace ConsoleApp1
             return (string.Compare(input, result, true) == 0);
         }
 
+        private static bool IsPalindrome1(string input)
+        {
+            char[] charList = input.ToCharArray();
+
+            Array.Reverse(charList);
+
+            string result = new string(charList);
+            return (string.Compare(input, result, true) == 0);
+        }
+
         static void Main(string[] args)
         {
             string input = "MADAM";
